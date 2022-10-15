@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increve-se</title>
+    <style>
+    
+      h2{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+
+
+    body{
+      background-color:lightskyblue;
+    }
+
+
+
+    h1{
+      font-family: Verdana, Tahoma, sans-serif;
+      background-color:steelblue;
+    }    
+        
+   * {box-sizing: border-box}
+
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color:steelblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color:steelblue
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+    </style>
+
+</head>
+<body>
+    <form action="action_page.php" style="border:1px solid white">
+        <div class="container">
+          <h1>Increve-se</h1>
+         <h2> Preencha com seus dados pessoais.</h2>
+          <hr>
+      
+          <label for="email"><b>E-mail</b></label>
+          <input type="text" placeholder="Insira seu e-mail" name="e-mail" required>
+      
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Insira seu senha" name="Senha" required>
+      
+          <label for="psw-repeat"><b>Confirme a Senha</b></label>
+          <input type="password" placeholder="Confirme sua senha" name="Confirme sua senha" required>
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> <Lembre-me></Lembre-me>
+          </label>
+      
+          <p>Eu li e concordo com os termos de uso<a href="#" style="color:dodgerblue"> Termos e privacidade.</a>.</p>
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancelar</button>
+            <button type="submit" class="signupbtn">Inscrever-se</button>
+          </div>
+        </div>
+    </form>
+    <p><a href="página01.html">Volte a página home</a></p>
+
+</body>
+</html>
